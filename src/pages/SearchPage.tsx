@@ -2,7 +2,7 @@
 import { css, jsx } from "@emotion/react";
 import React, { useEffect, useState } from "react";
 import { RouteComponentProps } from "react-router-dom";
-import QuestionList from "./QuestionList";
+import QuestionList from "../app/components/Routing/QuestionList";
 import { searchQuestions, QuestionData } from "@/app/components/QA/MockData/QuestionsData";
 import { Page } from "@/app/components/QA/child-components/Page";
 

@@ -6,7 +6,8 @@ export const SignInPage = () => {
   return (
     <div>
       We are still working on signin page
-      <Page title="Sign In"/>
+        {/* eslint-disable-next-line react/no-children-prop */}
+      <Page title="Sign In" children={undefined}/>
     </div>
   )
 }

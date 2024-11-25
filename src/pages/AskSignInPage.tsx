@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { Page } from "@/app/components/QA/child-components/Page";
-import { Form, minLength, required, Values, SubmitResult } from "../QA/Form";
-import { Field } from "../QA/Field";
+import { Form, minLength, required, Values, SubmitResult } from "../app/components/QA/Form";
+import { Field } from "../app/components/QA/Field";
 import { PostQuestionData, QuestionData } from "@/app/components/QA/MockData/QuestionsData";
 import {
   postQuestionActionCreator,
   AppState,
   clearPostedQuestionActionCreator,
-} from "../../redux-files/Store";
+} from "../app/redux-files/Store";
 import {ThunkDispatch} from "redux-thunk";
 import {connect} from "react-redux";
 import {AnyAction} from "redux";

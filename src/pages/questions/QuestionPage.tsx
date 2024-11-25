@@ -3,15 +3,12 @@ import {css, jsx} from '@emotion/react'
 import React, {Fragment, useEffect, useState} from 'react'
 import {Page} from '@/app/components/QA/child-components/Page'
 import {getQuestion, postAnswer, QuestionData} from '@/app/components/QA/MockData/QuestionsData'
-import {gray3, gray6} from '../Styles/Styles'
-import {AnswerList} from '../QA/AnswerList'
-import {Form, minLength, required, Values} from '../QA/Form'
-import {Field} from '../QA/Field'
+import {gray3, gray6} from '@/app/components/Styles/Styles'
+import {AnswerList} from '@/app/components/QA/AnswerList'
+import {Form, minLength, required, Values} from '@/app/components/QA/Form'
+import {Field} from '@/app/components/QA/Field'
 import {useParams} from "next/navigation";
 
-interface RouteParams {
-    questionId: number;
-}
 
 
 export const QuestionPage: React.FC = () => {
