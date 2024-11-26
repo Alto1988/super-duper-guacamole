@@ -184,14 +184,6 @@ export default function SignInCard() {
           Sign in with Google
         </Button>
         <Button
-          fullWidth
-          variant="outlined"
-          onClick={() => alert('Sign in with Facebook')}
-          startIcon={<FacebookIcon />}
-        >
-          Sign in with Facebook
-        </Button>
-        <Button
             fullWidth
             variant="outlined"
             onClick={() => alert('Sign in with Github')}
