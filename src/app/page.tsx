@@ -27,6 +27,7 @@ function BasicModal({open, handleClose}) {
             onClose={handleClose}
             aria-labelledby="modal-title"
             aria-describedby="modal-description"
+            BackdropProps={{onClick: (e) => e.stopPropagation()}}
         >
             <Box sx={style}>
                 <Typography id="modal-title" variant="h6" component="h2">
