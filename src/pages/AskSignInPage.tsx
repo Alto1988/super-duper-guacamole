@@ -53,6 +53,7 @@ export const AskSignInPage: React.FC<Props> = ({
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     submitResult = { success: true };
   }
+
   return (
     <Page title="Ask a question">
       <Form
