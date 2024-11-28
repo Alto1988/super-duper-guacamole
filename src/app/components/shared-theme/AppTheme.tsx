@@ -1,12 +1,12 @@
 import * as React from 'react';
-import { ThemeProvider, createTheme } from '../../../../../../material-components-reuse/material-ui/packages/mui-material/src/styles';
-import type { ThemeOptions } from '../../../../../../material-components-reuse/material-ui/packages/mui-material/src/styles';
 import { inputsCustomizations } from './customizations/inputs';
 import { dataDisplayCustomizations } from './customizations/dataDisplay';
 import { feedbackCustomizations } from './customizations/feedback';
 import { navigationCustomizations } from './customizations/navigation';
 import { surfacesCustomizations } from './customizations/surfaces';
 import { colorSchemes, typography, shadows, shape } from './themePrimitives';
+import {ThemeOptions, ThemeProvider} from "@mui/system";
+import {createTheme} from "@mui/material";
 
 interface AppThemeProps {
   children: React.ReactNode;
@@ -48,7 +48,7 @@ export default function AppTheme({
   if (disableCustomTheme) {
     return <React.Fragment>{children}</React.Fragment>;
   }
-  return (
+    return (
     <ThemeProvider theme={theme} disableTransitionOnChange>
       {children}
     </ThemeProvider>
